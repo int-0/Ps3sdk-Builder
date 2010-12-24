@@ -1,0 +1,11 @@
+Script program to automate this steps: http://crysol.org/es/node/1438 (sorry,
+only Spanish). This components are automatically installed:
+
+- Toolchain
+- Psl1ght
+- ps3libraries
+- SDL_PSL1GHT
+
+Script can configure your system too (for user, not root).
+
+Int-0
