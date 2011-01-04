@@ -1,14 +1,19 @@
 #!/usr/bin/env python
 
-def update(cd, run):
+def update(os_helper):
+    cd = os_helper.dirs.change
+    run = os_helper.run
     cd('SDL_PSL1GHT')
     run(['git pull -u'])
     cd('..')
 
-def download(cd, run):
+def download(os_helper):
+    run = os_helper.run
     run(['git', 'clone', 'https://github.com/cebash/SDL_PSL1GHT.git'])
 
-def build(cd, run):
+def build(os_helper):
+    cd = os_helper.dirs.change
+    run = os_helper.run
     cd('SDL_PSL1GHT')
     run(['./script.sh'])
     run(['make'])
